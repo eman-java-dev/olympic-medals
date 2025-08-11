@@ -39,10 +39,10 @@ it('should create the app', () => {
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](https://raw.githubusercontent.com/eman-java-dev/olympic-medals/main/assets/screenshots/home-page.png)
+![Home Page](assets/screenshots/home-page.png.png)
 
 ### Medals List
-![Medals List](https://raw.githubusercontent.com/eman-java-dev/olympic-medals/main/assets/screenshots/medals-list.png)
+![Medals List](assets/screenshots/home-page.png.png)
 
 ---
 
