@@ -35,9 +35,15 @@ it('should create the app', () => {
   expect(app).toBeTruthy();
 });
 ```
-screenshots 
-assets/screenshots/home-page.png.png
-assets/screenshots/medals-list.png.png
+
+## 📸 Screenshots
+
+### الصفحة الرئيسية
+![Home Page](src/assets/screenshots/home-page.png)
+
+### قائمة الميداليات
+![Medals List](src/assets/screenshots/medals-list.png)
+
 ```
 ##  Author
 Developed by **Eman ABDULLGADER** as part of a learning journey with **Angular** and **GitHub** integration,  
