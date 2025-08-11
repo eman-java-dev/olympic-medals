@@ -35,7 +35,9 @@ it('should create the app', () => {
   expect(app).toBeTruthy();
 });
 ```
+assets/screenshots 
 
+.... 
 ##  Author
 Developed by **Eman ABDULLGADER** as part of a learning journey with **Angular** and **GitHub** integration,  
 within the training program at **OpenClassrooms**.
