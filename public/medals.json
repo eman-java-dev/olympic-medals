@@ -1,0 +1,12 @@
+
+  [
+    { "country": "France",  "gold": 4, "silver": 6, "bronze": 5 },
+    { "country": "USA",     "gold": 7, "silver": 5, "bronze": 6 },
+    { "country": "Japan",   "gold": 3, "silver": 2, "bronze": 4 },
+    { "country": "Libya",   "gold": 0, "silver": 1, "bronze": 0 },
+    { "country": "Algeria", "gold": 1, "silver": 0, "bronze": 1 },
+    { "country": "Morocco", "gold": 2, "silver": 1, "bronze": 2 },
+    { "country": "Tunisia", "gold": 1, "silver": 2, "bronze": 1 },
+    { "country": "Egypt",   "gold": 3, "silver": 2, "bronze": 3 }
+  ]
+  

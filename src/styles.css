@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap-icons/font/bootstrap-icons.css";
+:root{
+    --bg: #F8FAFC;
+    --surface: #FFFFFF;
+    --text: #0F172A;
+    --muted: #475569;
+    --primary: #2563EB;
+    --accent: #22C55E;
+    --gold: #F59E0B;
+    --silver: #94A3B8;
+    --bronze: #C08457;
+  }
+  
+  /* خلفية عامة مريحة */
+  body {
+    background-color: #faf5ff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    animation: fadeInBg 1.2s ease forwards;
+  }
+  
+  @keyframes fadeInBg {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* هيرو هادئ بتدرّج subtle */
+  .bg-hero{
+    background: linear-gradient(180deg, rgba(37,99,235,0.06), rgba(34,197,94,0.04) 60%, #fff 100%);
+  }
+  
+  /* البطاقة في الهيرو */
+  .hero-card{
+    background: var(--surface);
+    border: 1px solid rgba(15,23,42,0.08);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(2,6,23,.06);
+  }
+  
+  /* شارات المجموع */
+  .badge-gold{
+    background: color-mix(in srgb, var(--gold) 20%, #fff);
+    color: #7a4a00;
+  }
+  .badge-silver{
+    background: color-mix(in srgb, var(--silver) 20%, #fff);
+    color: #3b4856;
+  }
+  .badge-bronze{
+    background: color-mix(in srgb, var(--bronze) 20%, #fff);
+    color: #6a3b0a;
+  }
+  
+  /* روابط النافبار النشطة */
+  .navbar .nav-link.active{
+    color: var(--primary) !important;
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary);
+  }
+  
+  /* كروت وجداول أنعم */
+  .card{
+    border-radius: 1rem;
+    border: 1px solid rgba(15,23,42,0.08);
+  }
+  .table td, .table th { vertical-align: middle; }
+  
+  

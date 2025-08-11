@@ -1,0 +1,134 @@
+/* ========== لوحة الألوان الهادئة ========== */
+:root{
+  --bg: #f7f9fc;            /* خلفية فاتحة هادئة */
+  --card: #ffffff;          /* بطاقات بيضاء */
+  --ink: #1f2a37;           /* نص داكن مريح */
+  --muted: #6b7280;         /* نص ثانوي */
+  --primary: #6aa0ff;       /* أزرق باستيلي لطيف */
+  --primary-600:#4a8dff;
+  --accent: #90e0ef;        /* سماوي خفيف */
+  --ring: rgba(74,141,255,.25);
+
+  --gold:   #ffd166;
+  --silver: #cfcfcf;
+  --bronze: #cd7f32;
+}
+
+/* خلفية الصفحة العامة */
+body{
+  background:
+    radial-gradient(1200px 600px at -10% -10%, #eaf2ff 0%, transparent 60%),
+    radial-gradient(1000px 500px at 110% -10%, #e7fff7 0%, transparent 60%),
+    var(--bg);
+  color: var(--ink);
+}
+
+/* حاوية الصفحة */
+main.page{
+  padding-block: 3rem;
+}
+
+/* ===== Navbar محسّنة ===== */
+.navbar{
+  backdrop-filter: saturate(120%) blur(6px);
+  background-color: rgba(255,255,255,.8) !important;
+}
+.navbar .nav-link{
+  position: relative;
+  transition: color .2s ease;
+}
+.navbar .nav-link.active{
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+.navbar .nav-link::after{
+  content:"";
+  position:absolute; left:.5rem; right:.5rem; bottom:.25rem;
+  height:2px; background:transparent; transform:scaleX(0);
+  transition: transform .25s ease, background .25s ease;
+}
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after{
+  background: var(--primary);
+  transform: scaleX(1);
+}
+
+/* ===== بطاقات وأقسام ===== */
+.section-card{
+  background: var(--card);
+  border: 1px solid rgba(31,42,55,.06);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(31,42,55,.06);
+}
+
+/* ===== جدول أنيق ===== */
+.table-soft{
+  --bs-table-bg: var(--card);
+  --bs-table-striped-bg: #f5f7fb;
+  --bs-table-hover-bg: #eef3ff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(31,42,55,.08);
+  box-shadow: 0 8px 22px rgba(31,42,55,.06);
+}
+.table-soft thead th{
+  font-weight:600;
+  color: var(--muted);
+  background: #f2f5fb;
+  border-bottom: 1px solid rgba(31,42,55,.08);
+}
+.table-soft td, .table-soft th{
+  vertical-align: middle;
+}
+
+/* شارات الميداليات */
+.badge-gold   { background: var(--gold);   color:#6b4e16; font-weight:700; }
+.badge-silver { background: var(--silver); color:#333;    font-weight:700; }
+.badge-bronze { background: var(--bronze); color:#fff;    font-weight:700; }
+
+/* أزرار لطيفة */
+.btn-primary{
+  background: linear-gradient(180deg, var(--primary), var(--primary-600));
+  border: none;
+  box-shadow: 0 8px 18px var(--ring);
+}
+.btn-outline-primary{
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.btn-outline-primary:hover{
+  background: var(--primary); color:#fff;
+}
+
+/* حقول الإدخال */
+.form-control{
+  border-radius: 10px;
+  border:1px solid rgba(31,42,55,.15);
+}
+.form-control:focus{
+  box-shadow: 0 0 0 .25rem var(--ring);
+  border-color: var(--primary);
+}
+
+/* ===== تأثيرات دخول ناعمة ===== */
+.reveal{ opacity:0; transform: translateY(8px); animation: fadeIn .6s ease forwards; }
+.reveal.delay-1{ animation-delay:.08s }
+.reveal.delay-2{ animation-delay:.16s }
+.reveal.delay-3{ animation-delay:.24s }
+
+@keyframes fadeIn{
+  to{ opacity:1; transform:none; }
+}
+
+/* احترام تفضيل تقليل الحركة */
+@media (prefers-reduced-motion: reduce){
+  .reveal, .reveal[class*="delay"]{ animation:none; opacity:1; transform:none; }
+}
+
+/* ===== Footer ===== */
+footer{
+  background: #f5f7fb;
+  color: var(--muted);
+}
+footer a{ color: inherit; }
+footer a:hover{ color: var(--primary); text-decoration: underline; }
