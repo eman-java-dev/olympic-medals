@@ -42,7 +42,7 @@ it('should create the app', () => {
 ![Home Page](assets/screenshots/home-page.png.png)
 
 ### Medals List
-![Medals List](assets/screenshots/home-page.png.png)
+![Medals List](assets/screenshots/medals-list.png.png)
 
 ---
 
