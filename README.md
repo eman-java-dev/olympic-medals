@@ -38,11 +38,13 @@ it('should create the app', () => {
 
 ## 📸 Screenshots
 
-### الصفحة الرئيسية
-![Home Page](src/assets/screenshots/home-page.png)
+### Home Page
+![Home Page](https://raw.githubusercontent.com/eman-java-dev/olympic-medals/main/assets/screenshots/home-page.png)
 
-### قائمة الميداليات
-![Medals List](src/assets/screenshots/medals-list.png)
+### Medals List
+![Medals List](https://raw.githubusercontent.com/eman-java-dev/olympic-medals/main/assets/screenshots/medals-list.png)
+
+---
 
 ```
 ##  Author
