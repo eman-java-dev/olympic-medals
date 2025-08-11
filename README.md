@@ -1,59 +1,43 @@
-# OlympicMedals
+# Olympic Medals
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
+This project is a simple Angular application designed to explore and visualize Olympic medal data.
 
-## Development server
+##  Description
+The application allows you to view and manage data related to Olympic medals. It includes basic features like data display, CSV export, and navigation between different sections of the app.
 
-To start a local development server, run:
+##  Functionality
+- Display a list of Olympic medals.
+- Export medal data to CSV format.
+- Responsive navigation bar.
+- Organized project structure with Angular best practices.
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
+##  Build
+To build the project for production, run:
 ```bash
 ng build
 ```
+The build artifacts will be stored in the `dist/` directory. The production build is optimized for performance and speed.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+## Running Unit Tests
+This project uses [Karma](https://karma-runner.github.io) for unit testing.  
+To execute the unit tests, run:
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+##  Example Test
+Here’s an example of a unit test included in the project:
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+```typescript
+it('should create the app', () => {
+  const fixture = TestBed.createComponent(AppComponent);
+  const app = fixture.componentInstance;
+  expect(app).toBeTruthy();
+});
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+##  Author
+Developed by **Eman ABDULLGADER** as part of a learning journey with **Angular** and **GitHub** integration,  
+within the training program at **OpenClassrooms**.
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
