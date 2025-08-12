@@ -1,1 +1,15 @@
-GitHub: https://github.com/eman-java-dev/olympic-medals
+GitHub Repository: https://github.com/eman-java-dev/olympic-medals
+
+Project Title: Olympic Medals
+
+Description:
+This is a simple Angular application developed as part of my learning journey with OpenClassrooms,  
+under the supervision of my mentor, César.  
+The app displays and manages Olympic medal data with basic features such as:
+- Viewing medal list
+- CSV export
+- Responsive navigation
+
+Author: Eman ABDULLGADER
+Date: August 2025
+
