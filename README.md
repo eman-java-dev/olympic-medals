@@ -51,4 +51,10 @@ it('should create the app', () => {
 Developed by **Eman ABDULLGADER** as part of a learning journey with **Angular** and **GitHub** integration,  
 within the training program at **OpenClassrooms**.
 
+Mentor: Cesare De Padua (OpenClassrooms)
+
+
+
+
+
 
